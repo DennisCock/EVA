@@ -8,7 +8,6 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0">
@@ -23,7 +22,7 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <TextField fx:id="txtNaam" promptText="Naam" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets bottom="100.0" />
                </GridPane.margin>
@@ -33,31 +32,21 @@
                   <Insets left="50.0" />
                </GridPane.margin>
             </ImageView>
-            <Button mnemonicParsing="false" prefHeight="65.0" prefWidth="130.0" text="Zoek" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button fx:id="btnZoek" mnemonicParsing="false" onAction="#btnZoekAction" prefHeight="65.0" prefWidth="130.0" text="Zoek" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets bottom="100.0" left="20.0" />
                </GridPane.margin>
             </Button>
-            <Button mnemonicParsing="false" text="Nieuw" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button fx:id="btnNieuw" mnemonicParsing="false" onAction="#btnNieuwAction" text="Nieuw" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <GridPane.margin>
                   <Insets bottom="100.0" left="190.0" />
                </GridPane.margin>
             </Button>
-            <Label text="Naam:" GridPane.rowIndex="1">
-               <GridPane.margin>
-                  <Insets bottom="100.0" left="245.0" />
-               </GridPane.margin>
-            </Label>
-            <TextField GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <TextField fx:id="txtNummer" promptText="Inschrijvingsnummer" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets top="100.0" />
                </GridPane.margin>
             </TextField>
-            <Label text="Inschrijvingsnummer:" GridPane.rowIndex="1">
-               <GridPane.margin>
-                  <Insets left="50.0" top="100.0" />
-               </GridPane.margin>
-            </Label>
          </children>
       </GridPane>
    </children>
