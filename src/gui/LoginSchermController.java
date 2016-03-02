@@ -9,9 +9,14 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -29,8 +34,14 @@ public class LoginSchermController implements Initializable {
     
     }
     @FXML
-    private void btnNieuwAction(ActionEvent event){
-    
+    private void btnNieuwAction(ActionEvent event) throws Exception{
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        Parent parent = FXMLLoader.load(getClass().getResource("/gui/NieuwLoginScherm.fxml"));
+        Stage stage = new Stage();
+        Scene scene = new Scene(parent);
+        stage.setScene(scene);
+        stage.setTitle("Nieuwe login");
+        stage.show();
     }
 
     /**
