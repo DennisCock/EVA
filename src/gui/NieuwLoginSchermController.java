@@ -18,21 +18,27 @@ import javafx.scene.control.TextField;
  *
  * @author Sana De Clippel
  */
-public class LoginSchermController implements Initializable {
-    
-    @FXML
-    private TextField txtNaam, txtNummer;
-    @FXML
-    private Button btnZoek, btnNieuw;
-    @FXML
-    private void btnZoekAction(ActionEvent event){
-    
-    }
-    @FXML
-    private void btnNieuwAction(ActionEvent event){
-    
-    }
+public class NieuwLoginSchermController implements Initializable {
 
+    @FXML
+    private TextField txtNaam, txtVoornaam, txtNummer;
+    @FXML
+    private Button btnOpslaan, btnAnnuleren, btnBladeren;
+    @FXML
+    private void btnOpslaanAction(ActionEvent event){
+    
+    }
+    @FXML
+    private void btnAnnulerenAction(ActionEvent event){
+    
+    }
+    @FXML
+    private void btnBladerenAction(ActionEvent event){
+    
+    }
+    
+    
+    
     /**
      * Initializes the controller class.
      */
