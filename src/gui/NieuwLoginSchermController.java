@@ -30,8 +30,14 @@ public class NieuwLoginSchermController implements Initializable {
     @FXML
     private Button btnOpslaan, btnAnnuleren, btnBladeren;
     @FXML
-    private void btnOpslaanAction(ActionEvent event){
-    
+    private void btnOpslaanAction(ActionEvent event) throws Exception{
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        Parent parent = FXMLLoader.load(getClass().getResource("/gui/Hoofdmenu.fxml"));
+        Stage stage = new Stage();
+        Scene scene = new Scene(parent);
+        stage.setScene(scene);
+        stage.setTitle("EVA");
+        stage.show();
     }
     @FXML
     private void btnAnnulerenAction(ActionEvent event) throws Exception{
