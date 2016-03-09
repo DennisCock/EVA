@@ -11,16 +11,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
@@ -35,6 +31,8 @@ public class RijtechniekenController implements Initializable {
     private ImageView imgAchtergrond,imgStuur,imgAchteruitrijden,imgGarage,imgHelling,imgKeren,imgKijktechniek,imgKoppeling,imgParkeren,imgRemtechniek,imgSchakeltechniek,imgStuuroefeningen,imgStuurtechniek,imgZithouding, imgNaamveld, imgTerug;
     @FXML
     private Circle clrAchteruitrijden,clrGarage,clrHelling,clrKeren,clrKijktechniek,clrKoppeling,clrParkeren,clrRemtechniek,clrSchakeltechniek,clrStuuroefeningen,clrStuurtechniek,clrZithouding;
+    @FXML
+    private Label lblNaam;
     /**
      * Initializes the controller class.
      */

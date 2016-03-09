@@ -11,24 +11,23 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <HBox prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RijtechniekenController">
    <children>
       <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
          <children>
-            <Arc fill="LIME" length="180.0" radiusX="90.0" radiusY="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+            <Arc fill="LIME" length="180.0" radiusX="90.0" radiusY="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="25.0" />
             <Arc fill="ORANGE" length="90.0" radiusX="90.0" radiusY="90.0" startAngle="270.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="120.0" />
             <Arc fill="RED" length="90.0" radiusX="90.0" radiusY="90.0" startAngle="180.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="120.0" />
             <ImageView fx:id="imgStuur" fitHeight="192.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
                <image>
-                  <Image url="@images/0-stuur.png" />
+                  <Image url="@images/1-stuur.png" />
                </image>
             </ImageView>
          </children>
       </AnchorPane>
       <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="768.0" prefWidth="536.0" HBox.hgrow="ALWAYS">
          <children>
-            <ImageView fitHeight="768.0" fitWidth="536.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <ImageView fx:id="imgAchtergrond" fitHeight="768.0" fitWidth="536.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                <image>
                   <Image url="@images/1-Achtergrond.png" />
                </image>
@@ -86,13 +85,13 @@
                   <Image url="@images/1-Achteruitrijden.png" />
                </image>
             </ImageView>
-            <Circle fx:id="clrAchteruitrijden" fill="ORANGE" layoutX="180.0" layoutY="560.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="193.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="341.0" AnchorPane.topAnchor="545.0" />
+            <Circle fx:id="clrAchteruitrijden" fill="RED" layoutX="180.0" layoutY="560.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="193.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="341.0" AnchorPane.topAnchor="545.0" />
             <ImageView fx:id="imgGarage" fitHeight="64.0" fitWidth="64.0" layoutX="290.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="144.0" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="182.98461532592773" AnchorPane.topAnchor="560.0">
                <image>
                   <Image url="@images/1-Garage.png" />
                </image>
             </ImageView>
-            <Circle fx:id="clrGarage" fill="ORANGE" layoutX="290.0" layoutY="560.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="193.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="231.0" AnchorPane.topAnchor="545.0" />
+            <Circle fx:id="clrGarage" fill="RED" layoutX="290.0" layoutY="560.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="193.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="231.0" AnchorPane.topAnchor="545.0" />
             <ImageView fx:id="imgKeren" fitHeight="64.0" fitWidth="64.0" layoutX="380.0" layoutY="505.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="199.0" AnchorPane.leftAnchor="380.0" AnchorPane.rightAnchor="92.98461532592773" AnchorPane.topAnchor="505.0">
                <image>
                   <Image url="@images/1-Keren.png" />
@@ -119,7 +118,7 @@
                   <Image url="@images/Terug.png" />
                </image>
             </ImageView>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="71.0" prefHeight="41.0" prefWidth="159.0" style="-fx-background-color: 0,0,0,0;" text="Naam" textAlignment="CENTER" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="71.0">
+            <Label fx:id="lblNaam" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="71.0" prefHeight="41.0" prefWidth="159.0" style="-fx-background-color: 0,0,0,0;" text="Naam" textAlignment="CENTER" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="71.0">
                <font>
                   <Font size="16.0" />
                </font>
