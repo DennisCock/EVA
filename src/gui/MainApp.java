@@ -26,7 +26,7 @@ public class MainApp extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/gui/LoginScherm.fxml"));
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root, 1024, 768);
         stage.setScene(scene);
         stage.setTitle("Login EVA");
         stage.show();
