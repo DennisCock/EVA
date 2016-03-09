@@ -26,5 +26,9 @@
       <CheckBox fx:id="cbxVerstrooid" layoutX="38.0" layoutY="538.0" mnemonicParsing="false" text="Verstrooid" />
       <TextArea fx:id="txaOpmerking" layoutX="447.0" layoutY="129.0" prefHeight="200.0" prefWidth="518.0" />
       <Label layoutX="447.0" layoutY="74.0" text="Andere opmerkingen" />
+      <Button fx:id="btnTerug" layoutX="876.0" layoutY="31.0" mnemonicParsing="false" onAction="#btnTerugAction" prefHeight="40.0" prefWidth="89.0" text="terug">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
    </children>
 </AnchorPane>
