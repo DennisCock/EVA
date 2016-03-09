@@ -39,8 +39,38 @@ public class HoofdmenuController implements Initializable {
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
-        stage.setTitle("Nieuwe login");
+        stage.setTitle("Login");
         stage.show();
+    }
+    @FXML
+    private void btnAttitudeAction(ActionEvent event) throws Exception{
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        Parent parent = FXMLLoader.load(getClass().getResource("/gui/AttitudeScherm.fxml"));
+        Stage stage = new Stage();
+        Scene scene = new Scene(parent);
+        stage.setScene(scene);
+        stage.setTitle("Attitude");
+        stage.show();
+    }
+    @FXML
+    private void btnStuurAction(ActionEvent event) throws Exception{
+//        ((Node)(event.getSource())).getScene().getWindow().hide();
+//        Parent parent = FXMLLoader.load(getClass().getResource("/gui/LoginScherm.fxml"));
+//        Stage stage = new Stage();
+//        Scene scene = new Scene(parent);
+//        stage.setScene(scene);
+//        stage.setTitle("Nieuwe login");
+//        stage.show();
+    }
+    @FXML
+    private void btnVerkeerAction(ActionEvent event) throws Exception{
+//        ((Node)(event.getSource())).getScene().getWindow().hide();
+//        Parent parent = FXMLLoader.load(getClass().getResource("/gui/LoginScherm.fxml"));
+//        Stage stage = new Stage();
+//        Scene scene = new Scene(parent);
+//        stage.setScene(scene);
+//        stage.setTitle("Nieuwe login");
+//        stage.show();
     }
     @FXML
     private void rctGrafiek1Click(ActionEvent event) throws Exception{
