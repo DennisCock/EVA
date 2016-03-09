@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.paint.*?>
@@ -15,10 +16,22 @@
    <children>
       <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
          <children>
-            <Arc fill="LIME" length="180.0" radiusX="90.0" radiusY="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="25.0" />
-            <Arc fill="ORANGE" length="90.0" radiusX="90.0" radiusY="90.0" startAngle="270.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="115.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="120.0" />
-            <Arc fill="RED" length="90.0" radiusX="90.0" radiusY="90.0" startAngle="180.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="120.0" />
-            <ImageView fx:id="imgStuur" fitHeight="192.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <Button layoutX="18.0" layoutY="20.0" mnemonicParsing="false" style="-fx-background-color: 0;">
+               <graphic>
+                  <Arc fill="LIME" length="180.0" radiusX="90.0" radiusY="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+               </graphic>
+            </Button>
+            <Button layoutX="113.0" layoutY="117.0" mnemonicParsing="false" style="-fx-background-color: 0;">
+               <graphic>
+                  <Arc fill="ORANGE" length="90.0" radiusX="90.0" radiusY="90.0" startAngle="270.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+               </graphic>
+            </Button>
+            <Button layoutX="15.0" layoutY="117.0" mnemonicParsing="false" style="-fx-background-color: 0;">
+               <graphic>
+                  <Arc fill="RED" length="90.0" radiusX="90.0" radiusY="90.0" startAngle="180.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+               </graphic>
+            </Button>
+            <ImageView fx:id="imgStuur" fitHeight="192.0" fitWidth="192.0" layoutX="20.0" layoutY="20.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/1-stuur.png" />
                </image>
@@ -32,93 +45,149 @@
                   <Image url="@images/1-Achtergrond.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="imgZithouding" fitHeight="64.0" fitWidth="64.0" layoutX="35.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="414.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="437.98461532592773" AnchorPane.topAnchor="290.0">
-               <image>
-                  <Image url="@images/1-Zithouding.png" />
-               </image>
-            </ImageView>
-            <Circle fx:id="clrZithouding" fill="LIME" layoutX="35.0" layoutY="290.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="463.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="486.0" AnchorPane.topAnchor="275.0" />
-            <ImageView fx:id="imgKoppeling" fitHeight="64.0" fitWidth="64.0" layoutX="90.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="504.0" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="382.98461532592773" AnchorPane.topAnchor="200.0">
-               <image>
-                  <Image url="@images/1-Koppeling.png" />
-               </image>
-            </ImageView>
-            <Circle fx:id="clrSchakeltechniek" fill="WHITE" layoutX="90.0" layoutY="200.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="553.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="431.0" AnchorPane.topAnchor="185.0" />
-            <ImageView fx:id="imgRemtechniek" fitHeight="64.0" fitWidth="64.0" layoutX="180.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="554.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="292.98461532592773" AnchorPane.topAnchor="150.0">
-               <image>
-                  <Image url="@images/1-Remtechniek.png" />
-               </image>
-            </ImageView>
-            <Circle fx:id="clrRemtechniek" fill="WHITE" layoutX="180.0" layoutY="150.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="603.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="341.0" AnchorPane.topAnchor="135.0" />
-            <ImageView fx:id="imgStuurtechniek" fitHeight="64.0" fitWidth="64.0" layoutX="290.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="554.0" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="182.98461532592773" AnchorPane.topAnchor="150.0">
-               <image>
-                  <Image url="@images/1-Stuurtechniek.png" />
-               </image>
-            </ImageView>
-            <Circle fx:id="clrStuurtechniek" fill="LIME" layoutX="290.0" layoutY="150.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="603.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="231.0" AnchorPane.topAnchor="135.0" />
-            <ImageView fx:id="imgSchakeltechniek" fitHeight="64.0" fitWidth="64.0" layoutX="380.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="503.0" AnchorPane.leftAnchor="380.0" AnchorPane.rightAnchor="92.98461532592773" AnchorPane.topAnchor="201.0">
-               <image>
-                  <Image url="@images/1-Schakeltechniek.png" />
-               </image>
-            </ImageView>
-            <Circle fx:id="clrKoppeling" fill="WHITE" layoutX="380.0" layoutY="200.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="553.0" AnchorPane.leftAnchor="365.0" AnchorPane.rightAnchor="141.0" AnchorPane.topAnchor="185.0" />
-            <ImageView fx:id="imgKijktechniek" fitHeight="64.0" fitWidth="64.0" layoutX="440.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="414.0" AnchorPane.leftAnchor="440.0" AnchorPane.rightAnchor="32.984615325927734" AnchorPane.topAnchor="290.0">
-               <image>
-                  <Image url="@images/1-Kijktechniek.png" />
-               </image>
-            </ImageView>
-            <Circle fx:id="clrKijktechniek" fill="ORANGE" layoutX="440.0" layoutY="290.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="463.0" AnchorPane.leftAnchor="425.0" AnchorPane.rightAnchor="81.0" AnchorPane.topAnchor="275.0" />
-            <ImageView fx:id="imgHelling" fitHeight="64.0" fitWidth="64.0" layoutX="35.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="294.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="437.98461532592773" AnchorPane.topAnchor="410.0">
-               <image>
-                  <Image url="@images/1-Helling.png" />
-               </image>
-            </ImageView>
-            <Circle fx:id="clrHelling" fill="WHITE" layoutX="35.0" layoutY="410.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="343.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="486.0" AnchorPane.topAnchor="395.0" />
-            <ImageView fx:id="imgStuuroefeningen" fitHeight="64.0" fitWidth="64.0" layoutX="90.0" layoutY="505.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="199.0" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="382.98461532592773" AnchorPane.topAnchor="505.0">
-               <image>
-                  <Image url="@images/1-Stuuroefeningen.png" />
-               </image>
-            </ImageView>
-            <Circle fx:id="clrStuuroefeningen" fill="LIME" layoutX="90.0" layoutY="505.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="248.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="431.0" AnchorPane.topAnchor="490.0" />
-            <ImageView fx:id="imgAchteruitrijden" fitHeight="64.0" fitWidth="64.0" layoutX="180.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="144.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="292.98461532592773" AnchorPane.topAnchor="560.0">
-               <image>
-                  <Image url="@images/1-Achteruitrijden.png" />
-               </image>
-            </ImageView>
-            <Circle fx:id="clrAchteruitrijden" fill="RED" layoutX="180.0" layoutY="560.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="193.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="341.0" AnchorPane.topAnchor="545.0" />
-            <ImageView fx:id="imgGarage" fitHeight="64.0" fitWidth="64.0" layoutX="290.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="144.0" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="182.98461532592773" AnchorPane.topAnchor="560.0">
-               <image>
-                  <Image url="@images/1-Garage.png" />
-               </image>
-            </ImageView>
-            <Circle fx:id="clrGarage" fill="RED" layoutX="290.0" layoutY="560.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="193.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="231.0" AnchorPane.topAnchor="545.0" />
-            <ImageView fx:id="imgKeren" fitHeight="64.0" fitWidth="64.0" layoutX="380.0" layoutY="505.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="199.0" AnchorPane.leftAnchor="380.0" AnchorPane.rightAnchor="92.98461532592773" AnchorPane.topAnchor="505.0">
-               <image>
-                  <Image url="@images/1-Keren.png" />
-               </image>
-            </ImageView>
-            <Circle fx:id="clrKeren" fill="LIME" layoutX="380.0" layoutY="505.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="248.0" AnchorPane.leftAnchor="365.0" AnchorPane.rightAnchor="141.0" AnchorPane.topAnchor="490.0" />
-            <ImageView fx:id="imgParkeren" fitHeight="64.0" fitWidth="64.0" layoutX="440.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="294.0" AnchorPane.leftAnchor="440.0" AnchorPane.rightAnchor="32.984615325927734" AnchorPane.topAnchor="410.0">
-               <image>
-                  <Image url="@images/1-Parkeren.png" />
-               </image>
-            </ImageView>
-            <Circle fx:id="clrParkeren" fill="RED" layoutX="440.0" layoutY="410.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="343.0" AnchorPane.leftAnchor="425.0" AnchorPane.rightAnchor="81.0" AnchorPane.topAnchor="395.0" />
+            <Button fx:id="btnZithouding" contentDisplay="GRAPHIC_ONLY" layoutX="20.0" layoutY="280.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="imgZithouding" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" x="35.0">
+                     <image>
+                        <Image url="@images/1-Zithouding.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Circle fx:id="clrZithouding" fill="LIME" layoutX="30.0" layoutY="285.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="468.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="491.0" AnchorPane.topAnchor="270.0" />
+            <Button fx:id="btnKoppeling" contentDisplay="GRAPHIC_ONLY" layoutX="85.0" layoutY="195.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="imgKoppeling" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1-Koppeling.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Circle fx:id="clrSchakeltechniek" fill="WHITE" layoutX="95.0" layoutY="196.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="557.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="426.0" AnchorPane.topAnchor="181.0" />
+            <Button fx:id="btnRemtechniek" contentDisplay="GRAPHIC_ONLY" layoutX="180.0" layoutY="150.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="imgRemtechniek" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1-Remtechniek.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Circle fx:id="clrRemtechniek" fill="WHITE" layoutX="190.0" layoutY="155.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="598.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="331.0" AnchorPane.topAnchor="140.0" />
+            <Button fx:id="btnStuurtechniek" contentDisplay="GRAPHIC_ONLY" layoutX="280.0" layoutY="150.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="imgStuurtechniek" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1-Stuurtechniek.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Circle fx:id="clrStuurtechniek" fill="LIME" layoutX="290.0" layoutY="155.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="598.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="231.0" AnchorPane.topAnchor="140.0" />
+            <Button fx:id="btnSchakeltechniek" contentDisplay="GRAPHIC_ONLY" layoutX="370.0" layoutY="195.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="imgSchakeltechniek" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1-Schakeltechniek.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Circle fx:id="clrKoppeling" fill="WHITE" layoutX="380.0" layoutY="200.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="553.0" AnchorPane.leftAnchor="365.0" AnchorPane.rightAnchor="141.0" AnchorPane.topAnchor="185.0" />
+            <Button fx:id="btnKijktechniek" contentDisplay="GRAPHIC_ONLY" layoutX="440.0" layoutY="280.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="imgKijktechniek" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1-Kijktechniek.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Circle fx:id="clrKijktechniek" fill="ORANGE" layoutX="450.0" layoutY="285.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="468.0" AnchorPane.leftAnchor="435.0" AnchorPane.rightAnchor="71.0" AnchorPane.topAnchor="270.0" />
+            <Button fx:id="btnHelling" contentDisplay="GRAPHIC_ONLY" layoutX="20.0" layoutY="415.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="imgHelling" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1-Helling.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Circle fx:id="clrHelling" fill="WHITE" layoutX="30.0" layoutY="420.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="333.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="491.0" AnchorPane.topAnchor="405.0" />
+            <Button fx:id="btnStuuroefeningen" contentDisplay="GRAPHIC_ONLY" layoutX="85.0" layoutY="500.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="imgStuuroefeningen" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1-Stuuroefeningen.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Circle fx:id="clrStuuroefeningen" fill="LIME" layoutX="95.0" layoutY="505.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="248.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="426.0" AnchorPane.topAnchor="490.0" />
+            <Button fx:id="btnAchteruitrijden" contentDisplay="GRAPHIC_ONLY" layoutX="180.0" layoutY="550.0" mnemonicParsing="false" onAction="#setColorAction" style="-fx-background-color: 0;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="imgAchteruitrijden" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1-Achteruitrijden.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Circle fx:id="clrAchteruitrijden" fill="RED" layoutX="190.0" layoutY="557.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="196.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="331.0" AnchorPane.topAnchor="542.0" />
+            <Button fx:id="btnGarage" contentDisplay="GRAPHIC_ONLY" layoutX="280.0" layoutY="550.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="imgGarage" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1-Garage.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Circle fx:id="clrGarage" fill="RED" layoutX="290.0" layoutY="555.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="198.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="231.0" AnchorPane.topAnchor="540.0" />
+            <Button fx:id="btnKeren" contentDisplay="GRAPHIC_ONLY" layoutX="370.0" layoutY="500.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="imgKeren" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1-Keren.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Circle fx:id="clrKeren" fill="LIME" layoutX="380.0" layoutY="505.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="248.0" AnchorPane.leftAnchor="365.0" AnchorPane.rightAnchor="141.0" AnchorPane.topAnchor="490.0" />
+            <Button fx:id="btnParkeren" contentDisplay="GRAPHIC_ONLY" layoutX="440.0" layoutY="415.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fx:id="imgParkeren" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/1-Parkeren.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Circle fx:id="clrParkeren" fill="RED" layoutX="450.0" layoutY="420.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="333.0" AnchorPane.leftAnchor="435.0" AnchorPane.rightAnchor="71.0" AnchorPane.topAnchor="405.0" />
          </children>
       </AnchorPane>
       <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
          <children>
-            <ImageView fx:id="imgNaamveld" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
-               <image>
-                  <Image url="@images/naamveld.png" />
-               </image>
-            </ImageView>
-            <ImageView fx:id="imgTerug" fitHeight="83.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0">
-               <image>
-                  <Image url="@images/Terug.png" />
-               </image>
-            </ImageView>
-            <Label fx:id="lblNaam" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="71.0" prefHeight="41.0" prefWidth="159.0" style="-fx-background-color: 0,0,0,0;" text="Naam" textAlignment="CENTER" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="71.0">
+            <Button fx:id="btnNaamveld" mnemonicParsing="false" onAction="#btnHoofdmenuAction" style="-fx-background-color: 0;" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+               <graphic>
+                  <ImageView fx:id="imgNaamveld" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/naamveld.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnTerug" layoutX="133.0" layoutY="606.0" mnemonicParsing="false" onAction="#btnHoofdmenuAction" style="-fx-background-color: 0;" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0">
+               <graphic>
+                  <ImageView fx:id="imgTerug" fitHeight="83.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/Terug.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="lblNaam" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="73.0" mouseTransparent="true" prefHeight="41.0" prefWidth="159.0" style="-fx-background-color: 0,0,0,0;" text="Naam" textAlignment="CENTER" AnchorPane.rightAnchor="77.0" AnchorPane.topAnchor="73.0">
                <font>
                   <Font size="16.0" />
                </font>
