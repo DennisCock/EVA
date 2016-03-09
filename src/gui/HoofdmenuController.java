@@ -55,7 +55,7 @@ public class HoofdmenuController implements Initializable {
     @FXML
     private void btnStuurAction(ActionEvent event) throws Exception{
         ((Node)(event.getSource())).getScene().getWindow().hide();
-        Parent parent = FXMLLoader.load(getClass().getResource("/gui/Rijtechnieken.fxml"));
+        Parent parent = FXMLLoader.load(getClass().getResource("/gui/Rijtechniek.fxml"));
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
