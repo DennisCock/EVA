@@ -4,3 +4,12 @@
     -fx-background-size: 1024 768;
     -fx-background-position: center center;
 }
+
+#hoofdPane{
+    -fx-background-color: #424242;
+}
+
+#btnVerkeer, #btnStuur{
+    -fx-background-radius: 100;
+    -fx-background-color: black;
+}

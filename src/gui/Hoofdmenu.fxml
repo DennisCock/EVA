@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.HoofdmenuController">
+<AnchorPane id="hoofdPane" prefHeight="768.0" prefWidth="1024.0" stylesheets="@css/GUI.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.HoofdmenuController">
    <children>
       <Rectangle fx:id="rctGrafiek5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="130.0" layoutX="941.0" layoutY="586.0" onMouseClicked="#rctGrafiek5Click" stroke="BLACK" strokeType="INSIDE" width="35.0" />
       <Rectangle fx:id="rctGrafiek4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="110.0" layoutX="892.0" layoutY="606.0" onMouseClicked="#rctGrafiek4Click" stroke="BLACK" strokeType="INSIDE" width="35.0" />
@@ -41,7 +41,7 @@
       </fx:define>
       <Button fx:id="btnStuur" layoutX="300.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnStuurAction">
           <graphic>
-            <ImageView image="$btnImageStuur" />
+            <ImageView image="$btnImageStuur"/>
           </graphic>
       </Button>
       <Circle fill="#118642" layoutX="137.0" layoutY="716.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
