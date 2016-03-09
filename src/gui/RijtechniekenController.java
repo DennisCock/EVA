@@ -14,6 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
@@ -33,6 +34,8 @@ public class RijtechniekenController implements Initializable {
     private Circle clrAchteruitrijden,clrGarage,clrHelling,clrKeren,clrKijktechniek,clrKoppeling,clrParkeren,clrRemtechniek,clrSchakeltechniek,clrStuuroefeningen,clrStuurtechniek,clrZithouding;
     @FXML
     private Label lblNaam;
+    @FXML
+    private Button btnAchteruitrijden,btnGarage,btnHelling,btnKeren,btnKijktechniek,btnKoppeling,btnParkeren,btnRemtechniek,btnSchakeltechniek,btnStuuroefeningen,btnStuurtechniek,btnZithouding, btnNaamveld, btnTerug;
     /**
      * Initializes the controller class.
      */

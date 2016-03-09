@@ -7,11 +7,17 @@ package gui;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.shape.Circle;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -26,8 +32,18 @@ public class VerkeerstechniekSchermController implements Initializable {
     @FXML
     private Label lblNaam;
     
-    @Override
+    @FXML
+    private void btnHoofdmenuAction(ActionEvent event) throws Exception{
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        Parent parent = FXMLLoader.load(getClass().getResource("/gui/Hoofdmenu.fxml"));
+        Stage stage = new Stage();
+        Scene scene = new Scene(parent);
+        stage.setScene(scene);
+        stage.setTitle("Hoofdmenu");
+        stage.show();
+    }
     
+    @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    

@@ -94,7 +94,7 @@
             <Circle fx:id="clrVolgafstand" fill="LIME" layoutX="440.0" layoutY="410.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="361.0" AnchorPane.leftAnchor="425.0" AnchorPane.rightAnchor="82.0" AnchorPane.topAnchor="395.0" />
          </children>
       </AnchorPane>
-      <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+      <AnchorPane maxWidth="1.7976931348623157E308" onMouseClicked="#btnHoofdmenuAction" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
          <children>
             <ImageView fx:id="imgNaamveld" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
                <image>
@@ -106,7 +106,7 @@
                   <Image url="@images/Terug.png" />
                </image>
             </ImageView>
-            <Label fx:id="lblNaam" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="71.0" prefHeight="41.0" prefWidth="159.0" style="-fx-background-color: 0,0,0,0;" text="Naam" textAlignment="CENTER" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="71.0">
+            <Label fx:id="lblNaam" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="71.0" onMouseClicked="#btnHoofdmenuAction" prefHeight="41.0" prefWidth="159.0" style="-fx-background-color: 0,0,0,0;" text="Naam" textAlignment="CENTER" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="71.0">
                <font>
                   <Font size="16.0" />
                </font>
