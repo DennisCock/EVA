@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RijtechniekenController">
+   <children>
+      <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="imgVerkeer" fitHeight="192.0" fitWidth="192.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <image>
+                  <Image url="@images/2-verkeer.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="768.0" prefWidth="536.0" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="imgVerkeerstechniek" fitHeight="768.0" fitWidth="536.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@images/2-Achtergrond.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgAanwijzers" fitHeight="64.0" fitWidth="64.0" layoutX="30.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="432.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="443.0" AnchorPane.topAnchor="290.0">
+               <image>
+                  <Image url="@images/2-Aanwijzers.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="clrAanwijzers" fill="LIME" layoutX="30.0" layoutY="290.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="481.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="492.0" AnchorPane.topAnchor="275.0" />
+            <ImageView fx:id="imgOpenbareWeg" fitHeight="64.0" fitWidth="64.0" layoutX="110.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="537.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="363.0" AnchorPane.topAnchor="185.0">
+               <image>
+                  <Image url="@images/2-OpenbareWeg.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="clrOpenbareWeg" fill="WHITE" layoutX="110.0" layoutY="185.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="586.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="412.0" AnchorPane.topAnchor="170.0" />
+            <ImageView fx:id="imgVoorrang" fitHeight="64.0" fitWidth="64.0" layoutX="235.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="582.0" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="238.0" AnchorPane.topAnchor="140.0">
+               <image>
+                  <Image url="@images/2-Voorrang.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="clrVoorrang" fill="WHITE" layoutX="235.0" layoutY="140.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="631.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="287.0" AnchorPane.topAnchor="125.0" />
+            <ImageView fx:id="imgVerkeerstekens" fitHeight="64.0" fitWidth="64.0" layoutX="365.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="537.0" AnchorPane.leftAnchor="365.0" AnchorPane.rightAnchor="108.0" AnchorPane.topAnchor="185.0">
+               <image>
+                  <Image url="@images/2-Verkeerstekens.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="clrVerkeerstekens" fill="LIME" layoutX="365.0" layoutY="185.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="586.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="157.0" AnchorPane.topAnchor="170.0" />
+            <ImageView fx:id="imgSnelheid" fitHeight="64.0" fitWidth="64.0" layoutX="440.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="432.0" AnchorPane.leftAnchor="440.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="290.0">
+               <image>
+                  <Image url="@images/2-Snelheid.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="clrSnelheid" fill="WHITE" layoutX="440.0" layoutY="290.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="481.0" AnchorPane.leftAnchor="425.0" AnchorPane.rightAnchor="82.0" AnchorPane.topAnchor="275.0" />
+            <ImageView fx:id="imgRechtsaf" fitHeight="64.0" fitWidth="64.0" layoutX="30.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="312.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="443.0" AnchorPane.topAnchor="410.0">
+               <image>
+                  <Image url="@images/2-Rechtsaf.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="clrRechtsaf" fill="WHITE" layoutX="30.0" layoutY="410.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="361.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="492.0" AnchorPane.topAnchor="395.0" />
+            <ImageView fx:id="imgLinksaf" fitHeight="64.0" fitWidth="64.0" layoutX="110.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="202.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="363.0" AnchorPane.topAnchor="520.0">
+               <image>
+                  <Image url="@images/2-Linksaf.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="clrLinksaf" fill="LIME" layoutX="110.0" layoutY="520.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="251.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="412.0" AnchorPane.topAnchor="505.0" />
+            <ImageView fx:id="imgKruisen" fitHeight="64.0" fitWidth="64.0" layoutX="235.0" layoutY="561.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="161.0" AnchorPane.leftAnchor="235.0" AnchorPane.rightAnchor="238.0" AnchorPane.topAnchor="561.0">
+               <image>
+                  <Image url="@images/2-Kruisen.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="clrKruisen" fill="RED" layoutX="235.0" layoutY="560.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="211.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="287.0" AnchorPane.topAnchor="545.0" />
+            <ImageView fx:id="imgInhalen" fitHeight="64.0" fitWidth="64.0" layoutX="365.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="202.0" AnchorPane.leftAnchor="365.0" AnchorPane.rightAnchor="108.0" AnchorPane.topAnchor="520.0">
+               <image>
+                  <Image url="@images/2-Inhalen.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="clrInhalen" fill="RED" layoutX="365.0" layoutY="520.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="251.0" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="157.0" AnchorPane.topAnchor="505.0" />
+            <ImageView fx:id="imgVolgafstand" fitHeight="64.0" fitWidth="64.0" layoutX="440.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="312.0" AnchorPane.leftAnchor="440.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="410.0">
+               <image>
+                  <Image url="@images/2-Volgafstand.png" />
+               </image>
+            </ImageView>
+            <Circle fx:id="clrVolgafstand" fill="LIME" layoutX="440.0" layoutY="410.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="361.0" AnchorPane.leftAnchor="425.0" AnchorPane.rightAnchor="82.0" AnchorPane.topAnchor="395.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane maxWidth="1.7976931348623157E308" onMouseClicked="#btnHoofdmenuAction" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+         <children>
+            <ImageView fx:id="imgNaamveld" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+               <image>
+                  <Image url="@images/naamveld.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgTerug" fitHeight="83.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0">
+               <image>
+                  <Image url="@images/Terug.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblNaam" alignment="CENTER" contentDisplay="CENTER" layoutX="23.0" layoutY="71.0" onMouseClicked="#btnHoofdmenuAction" prefHeight="41.0" prefWidth="159.0" style="-fx-background-color: 0,0,0,0;" text="Naam" textAlignment="CENTER" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="71.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>
