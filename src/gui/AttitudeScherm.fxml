@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AttitudeSchermController">
+   <children>
+      <Label layoutX="38.0" layoutY="14.0" text="Attitude">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="cbxZenuwachtig" layoutX="38.0" layoutY="96.0" mnemonicParsing="false" text="Zenuwachtig" />
+      <CheckBox fx:id="cbxConcentratie" layoutX="38.0" layoutY="149.0" mnemonicParsing="false" text="Concentratie" />
+      <CheckBox fx:id="cbxSchrik" layoutX="38.0" layoutY="206.0" mnemonicParsing="false" text="Schrik" />
+      <CheckBox fx:id="cbxInzet" layoutX="38.0" layoutY="483.0" mnemonicParsing="false" text="Inzet" />
+      <CheckBox fx:id="cbxAggresiefRijgedrag" layoutX="38.0" layoutY="426.0" mnemonicParsing="false" text="Agressief rijgedrag" />
+      <CheckBox fx:id="cbxOngeduldig" layoutX="38.0" layoutY="371.0" mnemonicParsing="false" text="Ongeduldig" />
+      <CheckBox fx:id="cbxVerkeersgevaarlijk" layoutX="38.0" layoutY="316.0" mnemonicParsing="false" text="Verkeersgevaarlijk" />
+      <CheckBox fx:id="cbxAsociaal" layoutX="38.0" layoutY="261.0" mnemonicParsing="false" text="Asociaal" />
+      <CheckBox fx:id="cbxEigenwijs" layoutX="38.0" layoutY="592.0" mnemonicParsing="false" text="Eigenwijs" />
+      <CheckBox fx:id="cbxVerstrooid" layoutX="38.0" layoutY="538.0" mnemonicParsing="false" text="Verstrooid" />
+      <TextArea fx:id="txaOpmerking" layoutX="447.0" layoutY="129.0" prefHeight="200.0" prefWidth="518.0" />
+      <Label layoutX="447.0" layoutY="74.0" text="Andere opmerkingen" />
+   </children>
+</AnchorPane>

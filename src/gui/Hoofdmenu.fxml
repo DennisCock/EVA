@@ -35,13 +35,13 @@
          </font>
       </Label>
       <fx:define>
-         <Image fx:id="btnImageStuur" url="/gui/images/stuur.png" />
-         <Image fx:id="btnImageVerkeer" url="/gui/images/verkeer.png" />
-         <Image fx:id="btnImageAttitude" url="/gui/images/attitude.png" />
+         <Image fx:id="btnImageStuur" url="/gui/images/0-stuur.png" />
+         <Image fx:id="btnImageVerkeer" url="/gui/images/0-verkeer.png" />
+         <Image fx:id="btnImageAttitude" url="/gui/images/0-attitude.png" />
       </fx:define>
       <Button fx:id="btnStuur" layoutX="300.0" layoutY="340.0" mnemonicParsing="false">
           <graphic>
-            <ImageView image="$btnImageStuur"/>
+            <ImageView />
           </graphic>
       </Button>
       <Circle fill="#118642" layoutX="137.0" layoutY="716.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
@@ -64,13 +64,18 @@
       </Label>
       <Button fx:id="btnVerkeer" layoutX="546.0" layoutY="338.0" mnemonicParsing="false">
           <graphic>
-            <ImageView image="$btnImageVerkeer"/>
+            <ImageView />
           </graphic>
       </Button>
       <Button fx:id="btnAttitude" layoutX="422.0" layoutY="459.0" mnemonicParsing="false">
           <graphic>
-            <ImageView image="$btnImageAttitude"/>
+            <ImageView />
           </graphic>
+      </Button>
+      <Button fx:id="btnTerug" layoutX="906.0" layoutY="67.0" mnemonicParsing="false" onAction="#btnTerugAction" prefHeight="40.0" prefWidth="89.0" text="terug">
+         <font>
+            <Font size="24.0" />
+         </font>
       </Button>
    </children>
 </AnchorPane>

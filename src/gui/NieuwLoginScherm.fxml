@@ -20,6 +20,6 @@
       <Button fx:id="btnOpslaan" layoutX="38.0" layoutY="513.0" mnemonicParsing="false" onAction="#btnOpslaanAction" text="Opslaan" />
       <Button fx:id="btnAnnuleren" layoutX="205.0" layoutY="513.0" mnemonicParsing="false" onAction="#btnAnnulerenAction" text="Annuleren" />
       <Label layoutX="38.0" layoutY="372.0" text="Foto:" />
-      <Button fx:id="btnBladeren" layoutX="121.0" layoutY="362.0" mnemonicParsing="false" onAction="#btnBladerenAction" text="Bladeren" />
+      <Button fx:id="btnBladeren" layoutX="121.0" layoutY="362.0" mnemonicParsing="false" onAction="#btnBladerenAction" text="..." />
    </children>
 </AnchorPane>
