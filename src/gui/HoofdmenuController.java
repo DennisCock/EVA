@@ -59,18 +59,18 @@ public class HoofdmenuController implements Initializable {
         Stage stage = new Stage();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
-        stage.setTitle("Rijtechnieken");
+        stage.setTitle("Rijtechniek");
         stage.show();
     }
     @FXML
     private void btnVerkeerAction(ActionEvent event) throws Exception{
-//        ((Node)(event.getSource())).getScene().getWindow().hide();
-//        Parent parent = FXMLLoader.load(getClass().getResource("/gui/LoginScherm.fxml"));
-//        Stage stage = new Stage();
-//        Scene scene = new Scene(parent);
-//        stage.setScene(scene);
-//        stage.setTitle("Nieuwe login");
-//        stage.show();
+        ((Node)(event.getSource())).getScene().getWindow().hide();
+        Parent parent = FXMLLoader.load(getClass().getResource("/gui/VerkeerstechniekScherm.fxml"));
+        Stage stage = new Stage();
+        Scene scene = new Scene(parent);
+        stage.setScene(scene);
+        stage.setTitle("Verkeerstechniek");
+        stage.show();
     }
     @FXML
     private void rctGrafiek1Click(ActionEvent event) throws Exception{

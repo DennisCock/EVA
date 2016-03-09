@@ -26,7 +26,7 @@ import javafx.stage.Stage;
  *
  * @author denni
  */
-public class RijtechniekenController implements Initializable {
+public class RijtechniekController implements Initializable {
 
     @FXML
     private ImageView imgAchtergrond,imgStuur,imgAchteruitrijden,imgGarage,imgHelling,imgKeren,imgKijktechniek,imgKoppeling,imgParkeren,imgRemtechniek,imgSchakeltechniek,imgStuuroefeningen,imgStuurtechniek,imgZithouding, imgNaamveld, imgTerug;
