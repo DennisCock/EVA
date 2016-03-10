@@ -16,17 +16,17 @@
    <children>
       <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
          <children>
-            <Button layoutX="18.0" layoutY="20.0" mnemonicParsing="false" style="-fx-background-color: 0;">
+            <Button layoutX="18.0" layoutY="20.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
                <graphic>
-                  <Arc fill="LIME" length="180.0" radiusX="90.0" radiusY="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+                  <Arc fill="GREEN" length="180.0" radiusX="90.0" radiusY="90.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
                </graphic>
             </Button>
-            <Button layoutX="113.0" layoutY="117.0" mnemonicParsing="false" style="-fx-background-color: 0;">
+            <Button layoutX="113.0" layoutY="117.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
                <graphic>
                   <Arc fill="ORANGE" length="90.0" radiusX="90.0" radiusY="90.0" startAngle="270.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
                </graphic>
             </Button>
-            <Button layoutX="15.0" layoutY="117.0" mnemonicParsing="false" style="-fx-background-color: 0;">
+            <Button layoutX="15.0" layoutY="117.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
                <graphic>
                   <Arc fill="RED" length="90.0" radiusX="90.0" radiusY="90.0" startAngle="180.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
                </graphic>
@@ -45,7 +45,7 @@
                   <Image url="@images/1-Achtergrond.png" />
                </image>
             </ImageView>
-            <Button fx:id="btnZithouding" contentDisplay="GRAPHIC_ONLY" layoutX="20.0" layoutY="280.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+            <Button fx:id="btnZithouding" contentDisplay="GRAPHIC_ONLY" layoutX="20.0" layoutY="280.0" mnemonicParsing="false" style="-fx-background-color: transparent;" textAlignment="CENTER">
                <graphic>
                   <ImageView fx:id="imgZithouding" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true" x="35.0">
                      <image>
@@ -54,8 +54,8 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Circle fx:id="clrZithouding" fill="LIME" layoutX="30.0" layoutY="285.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="468.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="491.0" AnchorPane.topAnchor="270.0" />
-            <Button fx:id="btnKoppeling" contentDisplay="GRAPHIC_ONLY" layoutX="85.0" layoutY="195.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+            <Circle fx:id="clrZithouding" fill="GREEN" layoutX="30.0" layoutY="285.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="468.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="491.0" AnchorPane.topAnchor="270.0" />
+            <Button fx:id="btnKoppeling" contentDisplay="GRAPHIC_ONLY" layoutX="85.0" layoutY="195.0" mnemonicParsing="false" style="-fx-background-color: transparent;" textAlignment="CENTER">
                <graphic>
                   <ImageView fx:id="imgKoppeling" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -65,7 +65,7 @@
                </graphic>
             </Button>
             <Circle fx:id="clrSchakeltechniek" fill="WHITE" layoutX="95.0" layoutY="196.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="557.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="426.0" AnchorPane.topAnchor="181.0" />
-            <Button fx:id="btnRemtechniek" contentDisplay="GRAPHIC_ONLY" layoutX="180.0" layoutY="150.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+            <Button fx:id="btnRemtechniek" contentDisplay="GRAPHIC_ONLY" layoutX="180.0" layoutY="150.0" mnemonicParsing="false" style="-fx-background-color: transparent;" textAlignment="CENTER">
                <graphic>
                   <ImageView fx:id="imgRemtechniek" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -75,7 +75,7 @@
                </graphic>
             </Button>
             <Circle fx:id="clrRemtechniek" fill="WHITE" layoutX="190.0" layoutY="155.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="598.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="331.0" AnchorPane.topAnchor="140.0" />
-            <Button fx:id="btnStuurtechniek" contentDisplay="GRAPHIC_ONLY" layoutX="280.0" layoutY="150.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+            <Button fx:id="btnStuurtechniek" contentDisplay="GRAPHIC_ONLY" layoutX="280.0" layoutY="150.0" mnemonicParsing="false" style="-fx-background-color: transparent;" textAlignment="CENTER">
                <graphic>
                   <ImageView fx:id="imgStuurtechniek" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -84,8 +84,8 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Circle fx:id="clrStuurtechniek" fill="LIME" layoutX="290.0" layoutY="155.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="598.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="231.0" AnchorPane.topAnchor="140.0" />
-            <Button fx:id="btnSchakeltechniek" contentDisplay="GRAPHIC_ONLY" layoutX="370.0" layoutY="195.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+            <Circle fx:id="clrStuurtechniek" fill="GREEN" layoutX="290.0" layoutY="155.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="598.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="231.0" AnchorPane.topAnchor="140.0" />
+            <Button fx:id="btnSchakeltechniek" contentDisplay="GRAPHIC_ONLY" layoutX="370.0" layoutY="195.0" mnemonicParsing="false" style="-fx-background-color: transparent;" textAlignment="CENTER">
                <graphic>
                   <ImageView fx:id="imgSchakeltechniek" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -95,7 +95,7 @@
                </graphic>
             </Button>
             <Circle fx:id="clrKoppeling" fill="WHITE" layoutX="380.0" layoutY="200.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="553.0" AnchorPane.leftAnchor="365.0" AnchorPane.rightAnchor="141.0" AnchorPane.topAnchor="185.0" />
-            <Button fx:id="btnKijktechniek" contentDisplay="GRAPHIC_ONLY" layoutX="440.0" layoutY="280.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+            <Button fx:id="btnKijktechniek" contentDisplay="GRAPHIC_ONLY" layoutX="440.0" layoutY="280.0" mnemonicParsing="false" style="-fx-background-color: transparent;" textAlignment="CENTER">
                <graphic>
                   <ImageView fx:id="imgKijktechniek" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -105,7 +105,7 @@
                </graphic>
             </Button>
             <Circle fx:id="clrKijktechniek" fill="ORANGE" layoutX="450.0" layoutY="285.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="468.0" AnchorPane.leftAnchor="435.0" AnchorPane.rightAnchor="71.0" AnchorPane.topAnchor="270.0" />
-            <Button fx:id="btnHelling" contentDisplay="GRAPHIC_ONLY" layoutX="20.0" layoutY="415.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+            <Button fx:id="btnHelling" contentDisplay="GRAPHIC_ONLY" layoutX="20.0" layoutY="415.0" mnemonicParsing="false" style="-fx-background-color: transparent;" textAlignment="CENTER">
                <graphic>
                   <ImageView fx:id="imgHelling" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -115,7 +115,7 @@
                </graphic>
             </Button>
             <Circle fx:id="clrHelling" fill="WHITE" layoutX="30.0" layoutY="420.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="333.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="491.0" AnchorPane.topAnchor="405.0" />
-            <Button fx:id="btnStuuroefeningen" contentDisplay="GRAPHIC_ONLY" layoutX="85.0" layoutY="500.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+            <Button fx:id="btnStuuroefeningen" contentDisplay="GRAPHIC_ONLY" layoutX="85.0" layoutY="500.0" mnemonicParsing="false" style="-fx-background-color: transparent;" textAlignment="CENTER">
                <graphic>
                   <ImageView fx:id="imgStuuroefeningen" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -124,8 +124,8 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Circle fx:id="clrStuuroefeningen" fill="LIME" layoutX="95.0" layoutY="505.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="248.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="426.0" AnchorPane.topAnchor="490.0" />
-            <Button fx:id="btnAchteruitrijden" contentDisplay="GRAPHIC_ONLY" layoutX="180.0" layoutY="550.0" mnemonicParsing="false" onAction="#setColorAction" style="-fx-background-color: 0;" textAlignment="CENTER">
+            <Circle fx:id="clrStuuroefeningen" fill="GREEN" layoutX="95.0" layoutY="505.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="248.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="426.0" AnchorPane.topAnchor="490.0" />
+            <Button fx:id="btnAchteruitrijden" contentDisplay="GRAPHIC_ONLY" layoutX="180.0" layoutY="550.0" mnemonicParsing="false" onAction="#setColorAction" style="-fx-background-color: transparent;" textAlignment="CENTER">
                <graphic>
                   <ImageView fx:id="imgAchteruitrijden" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -135,7 +135,7 @@
                </graphic>
             </Button>
             <Circle fx:id="clrAchteruitrijden" fill="RED" layoutX="190.0" layoutY="557.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="196.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="331.0" AnchorPane.topAnchor="542.0" />
-            <Button fx:id="btnGarage" contentDisplay="GRAPHIC_ONLY" layoutX="280.0" layoutY="550.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+            <Button fx:id="btnGarage" contentDisplay="GRAPHIC_ONLY" layoutX="280.0" layoutY="550.0" mnemonicParsing="false" style="-fx-background-color: transparent;" textAlignment="CENTER">
                <graphic>
                   <ImageView fx:id="imgGarage" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -145,7 +145,7 @@
                </graphic>
             </Button>
             <Circle fx:id="clrGarage" fill="RED" layoutX="290.0" layoutY="555.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="198.0" AnchorPane.leftAnchor="275.0" AnchorPane.rightAnchor="231.0" AnchorPane.topAnchor="540.0" />
-            <Button fx:id="btnKeren" contentDisplay="GRAPHIC_ONLY" layoutX="370.0" layoutY="500.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+            <Button fx:id="btnKeren" contentDisplay="GRAPHIC_ONLY" layoutX="370.0" layoutY="500.0" mnemonicParsing="false" style="-fx-background-color: transparent;" textAlignment="CENTER">
                <graphic>
                   <ImageView fx:id="imgKeren" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -154,8 +154,8 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Circle fx:id="clrKeren" fill="LIME" layoutX="380.0" layoutY="505.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="248.0" AnchorPane.leftAnchor="365.0" AnchorPane.rightAnchor="141.0" AnchorPane.topAnchor="490.0" />
-            <Button fx:id="btnParkeren" contentDisplay="GRAPHIC_ONLY" layoutX="440.0" layoutY="415.0" mnemonicParsing="false" style="-fx-background-color: 0;" textAlignment="CENTER">
+            <Circle fx:id="clrKeren" fill="GREEN" layoutX="380.0" layoutY="505.0" mouseTransparent="true" radius="15.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.bottomAnchor="248.0" AnchorPane.leftAnchor="365.0" AnchorPane.rightAnchor="141.0" AnchorPane.topAnchor="490.0" />
+            <Button fx:id="btnParkeren" contentDisplay="GRAPHIC_ONLY" layoutX="440.0" layoutY="415.0" mnemonicParsing="false" style="-fx-background-color: transparent;" textAlignment="CENTER">
                <graphic>
                   <ImageView fx:id="imgParkeren" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -169,7 +169,7 @@
       </AnchorPane>
       <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
          <children>
-            <Button fx:id="btnNaamveld" mnemonicParsing="false" onAction="#btnHoofdmenuAction" style="-fx-background-color: 0;" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+            <Button fx:id="btnNaamveld" mnemonicParsing="false" onAction="#btnHoofdmenuAction" style="-fx-background-color: transparent;" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
                <graphic>
                   <ImageView fx:id="imgNaamveld" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -178,7 +178,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="btnTerug" layoutX="133.0" layoutY="606.0" mnemonicParsing="false" onAction="#btnHoofdmenuAction" style="-fx-background-color: 0;" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0">
+            <Button fx:id="btnTerug" layoutX="133.0" layoutY="606.0" mnemonicParsing="false" onAction="#btnHoofdmenuAction" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="50.0">
                <graphic>
                   <ImageView fx:id="imgTerug" fitHeight="83.0" fitWidth="83.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -187,7 +187,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Label fx:id="lblNaam" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="73.0" mouseTransparent="true" prefHeight="41.0" prefWidth="159.0" style="-fx-background-color: 0,0,0,0;" text="Naam" textAlignment="CENTER" AnchorPane.rightAnchor="77.0" AnchorPane.topAnchor="73.0">
+            <Label fx:id="lblNaam" alignment="CENTER" contentDisplay="CENTER" layoutX="30.0" layoutY="73.0" mouseTransparent="true" prefHeight="41.0" prefWidth="159.0" style="-fx-background-color: transparent;" text="Naam" textAlignment="CENTER" AnchorPane.rightAnchor="77.0" AnchorPane.topAnchor="73.0">
                <font>
                   <Font size="16.0" />
                </font>

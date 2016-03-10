@@ -61,7 +61,7 @@ public class RijtechniekController implements Initializable {
         else if (clrAchteruitrijden.getFill() == Color.RED)
             clrAchteruitrijden.setFill(Color.ORANGE);
         else if (clrAchteruitrijden.getFill() == Color.ORANGE)
-            clrAchteruitrijden.setFill(Color.LIME);
+            clrAchteruitrijden.setFill(Color.GREEN);
         else clrAchteruitrijden.setFill(Color.WHITE);
     }
             
