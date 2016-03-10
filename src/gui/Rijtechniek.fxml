@@ -12,7 +12,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<HBox prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RijtechniekController">
+<HBox prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.RijtechniekController">
    <children>
       <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="300.0" HBox.hgrow="ALWAYS">
          <children>
@@ -31,7 +31,7 @@
                   <Arc fill="RED" length="90.0" radiusX="90.0" radiusY="90.0" startAngle="180.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
                </graphic>
             </Button>
-            <ImageView fx:id="imgStuur" fitHeight="192.0" fitWidth="192.0" layoutX="20.0" layoutY="20.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgStuur" fitHeight="192.0" fitWidth="192.0" layoutX="32.0" layoutY="25.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/1-stuur.png" />
                </image>
