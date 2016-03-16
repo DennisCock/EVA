@@ -12,6 +12,13 @@
     -fx-background-position: center center;
 }
 
+#attitudePane{
+    -fx-background-image: url("../images/8-Achtergrond.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1024 768;
+    -fx-background-position: center center;
+}
+
 #btnVerkeer, #btnStuur{
     -fx-background-radius: 100;
     -fx-background-color: black;
