@@ -12,11 +12,11 @@
 
 <AnchorPane id="hoofdPane" prefHeight="768.0" prefWidth="1024.0" stylesheets="@css/GUI.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.HoofdmenuController">
    <children>
-      <Rectangle fx:id="rctGrafiek5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="130.0" layoutX="941.0" layoutY="586.0" onMouseClicked="#rctGrafiek5Click" stroke="BLACK" strokeType="INSIDE" width="35.0" />
-      <Rectangle fx:id="rctGrafiek4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="110.0" layoutX="892.0" layoutY="606.0" onMouseClicked="#rctGrafiek4Click" stroke="BLACK" strokeType="INSIDE" width="35.0" />
-      <Rectangle fx:id="rctGrafiek3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="90.0" layoutX="844.0" layoutY="627.0" onMouseClicked="#rctGrafiek3Click" stroke="BLACK" strokeType="INSIDE" width="35.0" />
-      <Rectangle fx:id="rctGrafiek2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="70.0" layoutX="792.0" layoutY="650.0" onMouseClicked="#rctGrafiek2Click" stroke="BLACK" strokeType="INSIDE" width="35.0" />
-      <Rectangle fx:id="rctGrafiek1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="744.0" layoutY="669.0" onMouseClicked="#rctGrafiek1Click" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+      <Rectangle fx:id="rctGrafiek5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="130.0" layoutX="900.0" layoutY="590.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+      <Rectangle fx:id="rctGrafiek4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="110.0" layoutX="855.0" layoutY="610.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+      <Rectangle fx:id="rctGrafiek3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="90.0" layoutX="810.0" layoutY="630.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+      <Rectangle fx:id="rctGrafiek2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="70.0" layoutX="765.0" layoutY="650.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
+      <Rectangle fx:id="rctGrafiek1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="720.0" layoutY="670.0" stroke="BLACK" strokeType="INSIDE" width="35.0" />
       <Rectangle fx:id="rctEva3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="30.0" layoutX="27.0" layoutY="710.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
       <Rectangle fx:id="rctEva2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="30.0" layoutX="27.0" layoutY="670.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
       <Rectangle fx:id="rctEva1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="30.0" layoutX="27.0" layoutY="630.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
@@ -26,24 +26,22 @@
          </font>
       </TextArea>
       <Label fx:id="lblNaam" layoutX="755.0" layoutY="14.0" prefHeight="45.0" prefWidth="248.0" />
-      <Label layoutX="800.0" layoutY="608.0" text="B" />
-      <Label layoutX="900.0" layoutY="564.0" text="A" />
-      <Label layoutX="950.0" layoutY="542.0" text="X" />
-      <Label fx:id="lblEvolutie" layoutX="727.0" layoutY="718.0" prefHeight="45.0" prefWidth="287.0">
+      <Label layoutX="774.0" layoutY="608.0" text="B" textFill="WHITE" />
+      <Label layoutX="863.0" layoutY="574.0" text="A" textFill="WHITE" />
+      <Label layoutX="909.0" layoutY="552.0" text="X" textFill="WHITE" />
+      <Label fx:id="lblEvolutie" alignment="CENTER_RIGHT" layoutX="583.0" layoutY="718.0" prefHeight="45.0" prefWidth="431.0" textFill="WHITE">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <fx:define>
-         <Image fx:id="btnImageStuur" url="/gui/images/0-stuur.png" />
-         <Image fx:id="btnImageVerkeer" url="/gui/images/0-verkeer.png" />
-         <Image fx:id="btnImageAttitude" url="/gui/images/0-attitude.png" />
-      </fx:define>
-      <Button fx:id="btnStuur" layoutX="300.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnStuurAction">
-          <graphic>
-            <ImageView image="$btnImageStuur"/>
-          </graphic>
-      </Button>
+      <Button fx:id="btnStuur" layoutX="180.0" layoutY="276.0" mnemonicParsing="false" onAction="#btnStuurAction" prefHeight="218.0" prefWidth="240.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="226.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/0-stuur.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
       <Circle fill="#118642" layoutX="137.0" layoutY="716.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fill="#ff8a1f" layoutX="276.0" layoutY="718.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
       <Circle fill="#ff1f1f" layoutX="418.0" layoutY="718.0" radius="24.0" stroke="BLACK" strokeType="INSIDE" />
@@ -62,20 +60,151 @@
             <Font size="12.0" />
          </font>
       </Label>
-      <Button fx:id="btnVerkeer" layoutX="546.0" layoutY="338.0" mnemonicParsing="false" onAction="#btnVerkeerAction">
-          <graphic>
-            <ImageView image="$btnImageVerkeer"/>
-          </graphic>
-      </Button>
-      <Button fx:id="btnAttitude" layoutX="422.0" layoutY="459.0" mnemonicParsing="false" onAction="#btnAttitudeAction">
-          <graphic>
-            <ImageView image="$btnImageAttitude"/>
-          </graphic>
-      </Button>
-      <Button fx:id="btnTerug" layoutX="906.0" layoutY="67.0" mnemonicParsing="false" onAction="#btnTerugAction" prefHeight="40.0" prefWidth="89.0" text="terug">
+      <Button fx:id="btnVerkeer" layoutX="564.0" layoutY="264.0" mnemonicParsing="false" onAction="#btnVerkeerAction" prefHeight="240.0" prefWidth="233.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="220.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/0-verkeer.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnAttitude" layoutX="385.0" layoutY="439.0" mnemonicParsing="false" onAction="#btnAttitudeAction" prefHeight="170.0" prefWidth="153.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/0-attitude.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnTerug" layoutX="866.0" layoutY="68.0" mnemonicParsing="false" onAction="#btnTerugAction" prefHeight="93.0" prefWidth="98.0" style="-fx-background-color: transparent;">
          <font>
             <Font size="24.0" />
          </font>
+         <graphic>
+            <ImageView fitHeight="118.0" fitWidth="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/Terug.png" />
+               </image>
+            </ImageView>
+         </graphic>
       </Button>
+      <Button fx:id="btnSchakelaars" layoutX="41.0" layoutY="264.0" mnemonicParsing="false" onAction="#btnSchakelaarsAction" prefHeight="85.0" prefWidth="75.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/6-schakelaars.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnVloeistof" layoutX="21.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnVloeistofAction" prefHeight="70.0" prefWidth="105.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/6-Vloeistoffen.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnBanden" layoutX="42.0" layoutY="419.0" mnemonicParsing="false" onAction="#btnBandenAction" prefHeight="70.0" prefWidth="105.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/6-Banden.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnTanken" layoutX="844.0" layoutY="264.0" mnemonicParsing="false" onAction="#btnTankenAction" prefHeight="85.0" prefWidth="79.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/7-Tanken.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnGps" layoutX="868.0" layoutY="342.0" mnemonicParsing="false" onAction="#btnGpsAction" prefHeight="85.0" prefWidth="89.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/7-GPS.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnStop" layoutX="848.0" layoutY="419.0" mnemonicParsing="false" onAction="#btnStopAction" prefHeight="85.0" prefWidth="75.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/7-Noodstop.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Circle fx:id="clrSchakelaars" fill="#f5f5f5" layoutX="67.0" layoutY="264.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="clrStop" fill="WHITE" layoutX="941.0" layoutY="439.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="clrGps" fill="WHITE" layoutX="949.0" layoutY="349.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="clrTanken" fill="WHITE" layoutX="927.0" layoutY="276.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="clrBanden" fill="WHITE" layoutX="60.0" layoutY="439.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="clrVloeistof" fill="WHITE" layoutX="42.0" layoutY="349.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="btnMin" layoutX="622.0" layoutY="652.0" mnemonicParsing="false" onAction="#btnMinAction" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="102.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/5-minus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnPlus" layoutX="928.0" layoutY="650.0" mnemonicParsing="false" onAction="#btnPlusAction" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="98.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/5-plus.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnAutostrade" layoutX="639.0" layoutY="159.0" mnemonicParsing="false" onAction="#btnAutostradeAction" prefHeight="85.0" prefWidth="82.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/5-Autosnelweg.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnStad" layoutX="531.0" layoutY="174.0" mnemonicParsing="false" onAction="#btnStadAction" prefHeight="70.0" prefWidth="105.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/5-Stad.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnRijstroken" layoutX="355.0" layoutY="174.0" mnemonicParsing="false" onAction="#btnRijstrokenAction" prefHeight="85.0" prefWidth="79.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/5-Rijstroken.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnRotonde" layoutX="241.0" layoutY="158.0" mnemonicParsing="false" onAction="#btnRotondeAction" prefHeight="85.0" prefWidth="76.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="105.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/5-Rotonde.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Circle fx:id="clrAutostrade" fill="#f5f5f5" layoutX="720.0" layoutY="165.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="clrStad" fill="#f5f5f5" layoutX="616.0" layoutY="183.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="clrRijstroken" fill="#f5f5f5" layoutX="373.0" layoutY="183.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="clrRotonde" fill="#f5f5f5" layoutX="259.0" layoutY="174.0" radius="18.0" stroke="BLACK" strokeType="INSIDE" />
    </children>
 </AnchorPane>

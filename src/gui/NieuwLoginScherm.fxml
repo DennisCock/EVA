@@ -9,17 +9,17 @@
 
 <AnchorPane id="pane" prefHeight="768.0" prefWidth="1024.0" stylesheets="@css/GUI.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.NieuwLoginSchermController">
    <children>
-      <TextField fx:id="txtNaam" layoutX="38.0" layoutY="112.0" promptText="Naam" />
-      <TextField fx:id="txtVoornaam" layoutX="38.0" layoutY="192.0" promptText="Voornaam" />
-      <TextField fx:id="txtNummer" layoutX="38.0" layoutY="274.0" promptText="Inschrijvingsnummer" />
+      <TextField fx:id="txtNaam" layoutX="38.0" layoutY="112.0" prefHeight="65.0" prefWidth="370.0" promptText="Naam" />
+      <TextField fx:id="txtVoornaam" layoutX="38.0" layoutY="192.0" prefHeight="65.0" prefWidth="370.0" promptText="Voornaam" />
+      <TextField fx:id="txtNummer" layoutX="38.0" layoutY="274.0" prefHeight="65.0" prefWidth="370.0" promptText="Inschrijvingsnummer" />
       <Label layoutX="38.0" layoutY="14.0" text="Nieuwe leerling aanmaken">
          <font>
             <Font size="46.0" />
          </font>
       </Label>
-      <Button fx:id="btnOpslaan" layoutX="38.0" layoutY="513.0" mnemonicParsing="false" onAction="#btnOpslaanAction" text="Opslaan" />
-      <Button fx:id="btnAnnuleren" layoutX="205.0" layoutY="513.0" mnemonicParsing="false" onAction="#btnAnnulerenAction" text="Annuleren" />
-      <Label layoutX="38.0" layoutY="372.0" text="Foto:" />
-      <Button fx:id="btnBladeren" layoutX="121.0" layoutY="362.0" mnemonicParsing="false" onAction="#btnBladerenAction" text="..." />
+      <Button fx:id="btnOpslaan" layoutX="38.0" layoutY="513.0" mnemonicParsing="false" onAction="#btnOpslaanAction" prefHeight="65.0" prefWidth="148.0" text="Opslaan" />
+      <Button fx:id="btnAnnuleren" layoutX="205.0" layoutY="513.0" mnemonicParsing="false" onAction="#btnAnnulerenAction" prefHeight="65.0" prefWidth="177.0" text="Annuleren" />
+      <Label layoutX="38.0" layoutY="374.0" prefHeight="43.0" prefWidth="67.0" text="Foto:" />
+      <Button fx:id="btnBladeren" layoutX="121.0" layoutY="362.0" mnemonicParsing="false" onAction="#btnBladerenAction" prefHeight="65.0" prefWidth="60.0" text="..." />
    </children>
 </AnchorPane>
