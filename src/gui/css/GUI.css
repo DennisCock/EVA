@@ -6,7 +6,10 @@
 }
 
 #hoofdPane{
-    -fx-background-color: #424242;
+    -fx-background-image: url("../images/5-Achtergrond.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1024 768;
+    -fx-background-position: center center;
 }
 
 #btnVerkeer, #btnStuur{
