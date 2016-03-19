@@ -8,46 +8,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="pane" stylesheets="@css/GUI.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginSchermController">
+<AnchorPane id="pane" prefHeight="768.0" prefWidth="1024.0" stylesheets="@css/GUI.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.LoginSchermController">
    <children>
-      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0">
-        <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-        </columnConstraints>
-        <rowConstraints>
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-        </rowConstraints>
-         <children>
-            <TextField fx:id="txtNaam" prefHeight="70.0" prefWidth="340.0" promptText="Naam" GridPane.columnIndex="1" GridPane.rowIndex="1">
-               <GridPane.margin>
-                  <Insets bottom="100.0" />
-               </GridPane.margin>
-            </TextField>
-            <ImageView fitHeight="200.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
-               <GridPane.margin>
-                  <Insets left="50.0" />
-               </GridPane.margin>
-            </ImageView>
-            <Button fx:id="btnZoek" mnemonicParsing="false" onAction="#btnZoekAction" prefHeight="60.0" prefWidth="125.0" text="Zoek" GridPane.columnIndex="1" GridPane.rowIndex="2">
-               <GridPane.margin>
-                  <Insets bottom="100.0" left="20.0" />
-               </GridPane.margin>
-            </Button>
-            <Button fx:id="btnNieuw" mnemonicParsing="false" onAction="#btnNieuwAction" prefHeight="60.0" prefWidth="125.0" text="Nieuw" GridPane.columnIndex="1" GridPane.rowIndex="2">
-               <GridPane.margin>
-                  <Insets bottom="100.0" left="190.0" />
-               </GridPane.margin>
-            </Button>
-            <TextField fx:id="txtNummer" prefHeight="70.0" prefWidth="340.0" promptText="Inschrijvingsnummer" GridPane.columnIndex="1" GridPane.rowIndex="1">
-               <GridPane.margin>
-                  <Insets top="100.0" />
-               </GridPane.margin>
-            </TextField>
-         </children>
-      </GridPane>
+      <TextField fx:id="txtNaam" layoutX="52.0" layoutY="297.0" prefHeight="70.0" prefWidth="340.0" promptText="Naam" />
+      <ImageView fitHeight="200.0" fitWidth="250.0" layoutX="97.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnZoek" layoutX="52.0" layoutY="493.0" mnemonicParsing="false" onAction="#btnZoekAction" prefHeight="60.0" prefWidth="125.0" text="Zoek" />
+      <Button fx:id="btnNieuw" layoutX="267.0" layoutY="493.0" mnemonicParsing="false" onAction="#btnNieuwAction" prefHeight="60.0" prefWidth="125.0" text="Nieuw" />
+      <TextField fx:id="txtNummer" layoutX="52.0" layoutY="384.0" prefHeight="70.0" prefWidth="340.0" promptText="Inschrijvingsnummer" />
+      <ListView fx:id="lstLeerlingen" layoutX="580.0" layoutY="148.0" prefHeight="530.0" prefWidth="400.0" visible="false" />
+      <Button fx:id="btnDoorgaan" layoutX="850.0" layoutY="689.0" mnemonicParsing="false" onAction="#btnDoorgaanAction" text="Doorgaan" visible="false" />
    </children>
 </AnchorPane>
